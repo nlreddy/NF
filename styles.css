@@ -48,3 +48,112 @@ img {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+.products {
+  padding: 2rem;
+  background-color: #fffef9;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #f0f8e0;
+  border: 1px solid #d2e3b3;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card h3 {
+  color: #4e7520;
+  margin-bottom: 0.5rem;
+}
+
+
+// pictures.
+
+.founder-section {
+  padding: 2rem;
+  background-color: #f9f9f4;
+}
+
+.founder-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.founder-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.founder-bio {
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.founder-bio h3 {
+  color: #4e7520;
+  margin-bottom: 0.5rem;
+}
+
+
+<!-- new css for seedbank us page --!>
+
+.seedbank {
+  padding: 2rem;
+  background-color: #fefcf5;
+}
+
+.seed-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.seed-card {
+  background-color: #f0f8e0;
+  border: 1px solid #d2e3b3;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.seed-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.seed-card h3 {
+  color: #4e7520;
+  margin-bottom: 0.5rem;
+}
