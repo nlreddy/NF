@@ -157,3 +157,32 @@ img {
   color: #4e7520;
   margin-bottom: 0.5rem;
 }
+
+<!-- new css for contact us page --!>
+.contact-section {
+  padding: 2rem;
+  background-color: #fefcf5;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #4e7520;
+  text-decoration: none;
+}
+
+.map-section {
+  margin-top: 2rem;
+}
+
+.map-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
