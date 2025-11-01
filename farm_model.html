@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>60x60 ZBNF Model | Sustainable Farm</title>
+    <style>
+        /* === Your Original CSS Styles === */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f1e9;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+        header {
+          background-color: #6b8e23;
+          color: white;
+          padding: 1rem;
+          text-align: center;
+        }
+        nav a {
+          margin: 0 1rem;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        main {
+          padding: 2rem;
+          text-align: center;
+        }
+        footer {
+          background-color: #eee;
+          text-align: center;
+          padding: 1rem;
+          font-size: 0.9rem;
+        }
+
+        /* Modal Styles */
+        .modal, .sub-modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content, .sub-modal-content {
+          background-color: #fffef9;
+          margin: 10% auto;
+          padding: 2rem;
+          border: 1px solid #d2e3b3;
+          width: 80%;
+          max-width: 600px;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .close {
+          float: right;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #4e7520;
+          cursor: pointer;
+        }
+
+        .model-section button {
+          margin: 1rem;
+          padding: 0.8rem 1.2rem;
+          background-color: #6b8e23;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+        .model-section button:hover {
+          background-color: #4e7520;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>60x60 ZBNF Plot</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="seedbank.html"> Seed Bank</a>
+        <a href="gaushala.html">Gaushala</a>
+        <a href="products.html">Products</a>
+        <a href="members.html">Members</a>
+        <a href="farm_model.html"> Model Farm ZBNF </a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="model-section">
+    <h2>Explore the 60x60 ft Subhash Palekar Natural Farming Model</h2>
+    <p>This layout demonstrates how a small plot can support a complete ecosystem using Zero Budget Natural Farming principles.</p>
+    <button onclick="openModal()">View Model Overview</button>
+</main>
+
+<!-- Primary Modal -->
+<div id="mainModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>60x60 ft ZBNF Plot Overview</h3>
+        <p>This model includes multi-layer cropping, border trees, composting zones, and water conservation techniques.</p>
+        <button onclick="openSubModal('layers')">Multi-Layer Cropping</button>
+        <button onclick="openSubModal('trees')">Border Trees & Windbreaks</button>
+        <button onclick="openSubModal('compost')">Composting & Jeevamrut</button>
+    </div>
+</div>
+
+<!-- Sub-Modals -->
+<div id="layersModal" class="sub-modal">
+    <div class="sub-modal-content">
+        <span class="close" onclick="closeSubModal('layersModal')">&times;</span>
+        <h3>Multi-Layer Cropping</h3>
+        <p>Combines tall crops (e.g., banana), medium crops (e.g., papaya), creepers (e.g., beans), and ground cover (e.g., turmeric) to maximize space and biodiversity.</p>
+    </div>
+</div>
+
+<div id="treesModal" class="sub-modal">
+    <div class="sub-modal-content">
+        <span class="close" onclick="closeSubModal('treesModal')">&times;</span>
+        <h3>Border Trees & Windbreaks</h3>
+        <p>Native trees like Gliricidia and Neem provide shade, wind protection, and biomass for mulching and composting.</p>
+    </div>
+</div>
+
+<div id="compostModal" class="sub-modal">
+    <div class="sub-modal-content">
+        <span class="close" onclick="closeSubModal('compostModal')">&times;</span>
+        <h3>Composting & Jeevamrut</h3>
+        <p>On-site compost pits and Jeevamrut preparation zones enrich soil with microbial life, using cow dung, urine, jaggery, and pulse flour.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Nirmal Prakritik Krishi | Nirmal, India</p>
+</footer>
+
+<script>
+    function openModal() {
+      document.getElementById("mainModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("mainModal").style.display = "none";
+    }
+
+    function openSubModal(id) {
+      document.getElementById(id + "Modal").style.display = "block";
+    }
+
+    function closeSubModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      ["mainModal", "layersModal", "treesModal", "compostModal"].forEach(id => {
+        const modal = document.getElementById(id);
+        if (event.target === modal) modal.style.display = "none";
+      });
+    };
+</script>
+
+</body>
+</html>

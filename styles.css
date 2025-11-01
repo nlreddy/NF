@@ -1,6 +1,35 @@
 /* styles.css */
 
 body {
+
+font-family: Arial, sans-serif;
+          background-color: #f4f1e9;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+        header {
+          background-color: #6b8e23;
+          color: white;
+          padding: 1rem;
+          text-align: center;
+        }
+        nav a {
+          margin: 0 1rem;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        main {
+          padding: 2rem;
+          text-align: center;
+        }
+        footer {
+          background-color: #eee;
+          text-align: center;
+          padding: 1rem;
+          font-size: 0.9rem;
+
   font-family: Arial, sans-serif;
   background-color: #f4f1e9;
   margin: 0;
@@ -78,10 +107,7 @@ img {
   transform: scale(1.02);
 }
 
-.product-card h3 {
-  color: #4e7520;
-  margin-bottom: 0.5rem;
-}
+
 
 
 // pictures.
@@ -186,3 +212,130 @@ img {
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+<!-- new css for core pillar page --!>
+
+.pillars-section {
+  padding: 2rem;
+  background-color: #fefcf5;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  background-color: #f0f8e0;
+  border: 1px solid #d2e3b3;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.pillar-card:hover {
+  transform: scale(1.02);
+}
+
+.pillar-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+
+<!-- new css for intro page --!>
+
+.intro-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #f5f9f6;
+  border-left: 6px solid #4caf50;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro-section h2 {
+  font-size: 1.8em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.intro-details {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.intro-details li {
+  margin-bottom: 10px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fffef9;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 1px solid #d2e3b3;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.close {
+  color: #4e7520;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-buttons button {
+  background-color: #6b8e23;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #4e7520;
+}
+
+
