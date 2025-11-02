@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Seed Bank Categories</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+    <h1>Seed Bank</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="seedbank.html">Seed Bank</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="seedbank">
+    <section class="intro">
+        <h2>Select a Seed Category</h2>
+        <div class="category-buttons">
+            <button onclick="showCategory('vegetable')">Vegetables</button>
+            <button onclick="showCategory('wildfruit')">Wild Fruit</button>
+            <button onclick="showCategory('seasonalfruit')">Seasonal Fruit</button>
+            <button onclick="showCategory('pulses')">Pulses</button>
+            <button onclick="showCategory('millets')">Millets</button>
+        </div>
+    </section>
+
+    <section id="seedGallery" class="seed-gallery"></section>
+</main>
+
+<footer>
+    &copy; 2025 Sustainable Living Farm. All rights reserved.
+</footer>
+
+<script src="seedbank.js"></script>
+</body>
+</html>

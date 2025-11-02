@@ -3,43 +3,38 @@ const seedData = {
 
    {
         name: "Bottle Gourd",
-        image: "images/seedbank/bottlegourd.jpg",
+        image: "images/farm_seedbank/bottlegourd.jpg",
         info: "Fast-growing variety, ideal for summer cultivation."
       },
-    {
-      name: "Bottle Gourd",
-      image: "images/seedbank/bottlegourd.jpg",
-      info: "Fast-growing variety, ideal for summer cultivation."
-    },
+
     {
       name: "Gutti Beera",
-      image: "images/seedbank/guthi_beera.jpg",
+      image: "images/farm_seedbank/guthi_beera.jpg",
       info: "High-yielding variety, suitable for organic farms."
     },
     {
       name: "Tomato",
-      image: "images/seedbank/tomoto.jpg",
+      image: "images/farm_seedbank/tomoto.jpg",
       info: "Heirloom tomato with rich flavor and drought resistance."
-    },
-    {
-          name: "cherri Tomato",
-          image: "images/seedbank/tomoto.jpg",
-          info: "Heirloom cherri tomato with rich flavor and drought resistance."
-        },
-     {
-                  name: "cherri Tomato",
-                  image: "images/seedbank/tomoto.jpg",
-                  info: "Heirloom cherri tomato with rich flavor and drought resistance."
-                }
+    }
+
+
 
 
   ],
   wildfruit: [
     {
-      name: "Wild Gooseberry",
-      image: "images/gooseberry.jpg",
+      name: "Wild Mango",
+      image: "images/farm_seedbank/wild_mango.jpg",
       info: "Rich in antioxidants, grows well in dry zones."
-    }
+    },
+
+    {
+          name: "Wild muskmelon",
+          image: "images/farm_seedbank/putaan_pandu.jpg",
+          info: "Rich in antioxidants, grows well in dry zones."
+        }
+
   ],
   seasonalfruit: [
     {
