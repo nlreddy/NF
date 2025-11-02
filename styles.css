@@ -77,10 +77,27 @@ img {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+@media screen and (max-width: 600px) {
+  .products {
+    padding: 1rem;
+  }
 
-.products {
-  padding: 2rem;
-  background-color: #fffef9;
+  .products h2 {
+    font-size: 1.5rem;
+  }
+
+  .products p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 0.95rem;
+  }
 }
 
 .intro {
@@ -185,13 +202,18 @@ img {
 }
 
 <!-- new css for contact us page --!>
-.contact-section {
-  padding: 2rem;
-  background-color: #fefcf5;
-  max-width: 900px;
-  margin: 0 auto;
-}
 
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+
+  .contact-section p,
+  .contact-section a {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
 .contact-info p {
   font-size: 1rem;
   margin: 0.5rem 0;
@@ -383,10 +405,6 @@ img {
   }
 
   /* Mobile-friendly layout for product page */
-      .products {
-        padding: 1rem;
-        text-align: center;
-      }
 
       .intro h2 {
         font-size: 1.4rem;
@@ -399,12 +417,7 @@ img {
         margin-bottom: 2rem;
       }
 
-      .product-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 1rem;
-        padding: 1rem;
-      }
+
 
       .product-card {
         background-color: #fff;
