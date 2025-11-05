@@ -14,14 +14,16 @@ font-family: Arial, sans-serif;
           padding: 1rem;
           text-align: center;
         }
-        }
         nav a {
           margin: 0 1rem;
           color: white;
           text-decoration: none;
           font-weight: bold;
         }
-
+        main {
+          padding: 2rem;
+          text-align: center;
+        }
         footer {
           background-color: #eee;
           text-align: center;
@@ -35,7 +37,12 @@ font-family: Arial, sans-serif;
   color: #333;
 }
 
-
+header {
+  background-color: #6b8e23;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
 
 nav a {
   margin: 0 1rem;
@@ -451,139 +458,69 @@ img {
         }
       }
 
-/* Default: hide toggle on desktop */
-.menu-toggle {
-  display: none;
-}
-
-/* Show toggle only on screens 600px or smaller */
-
-.menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #6b8e23;
-    padding: 1rem 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-}
-
-/*@media screen and (max-width: 600px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #6b8e23;
-    padding: 1rem 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-}*/
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1rem;
-}
 
 @media screen and (max-width: 600px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #6b8e23;
-    padding: 1rem 0;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
+  header, footer {
+    padding: 0.5rem;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .nav-links.active {
-    display: flex;
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .founder-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-photo {
+    width: 180px;
+  }
+
+  .founder-bio {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .seed-gallery,
+  .pillar-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .intro-section {
+    padding: 1rem;
+    margin: 20px auto;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 1rem;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  #plantImage {
+    width: 100px;
+    height: 100px;
   }
 }
-
-  /* Modal Styles */
-        .modal, .sub-modal {
-          display: none;
-          position: fixed;
-          z-index: 1000;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0,0,0,0.5);
-        }
-        .modal-content, .sub-modal-content {
-          background-color: #fffef9;
-          margin: 10% auto;
-          padding: 2rem;
-          border: 1px solid #d2e3b3;
-          width: 80%;
-          max-width: 600px;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-<!-- modal styes. zbnf model page --!>
-        .model-section button {
-          margin: 1rem;
-          padding: 0.8rem 1.2rem;
-          background-color: #6b8e23;
-          color: white;
-          border: none;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 1rem;
-        }
-        .model-section button:hover {
-          background-color: #4e7520;
-        }
